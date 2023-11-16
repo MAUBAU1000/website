@@ -20,7 +20,7 @@ h1 {
     color: #ffffff;
     position: absolute;
     top: 20px;
-    left: 3in;
+    left: 20%;
     margin: 0; /* Remove default margin */
 }
 
@@ -34,20 +34,20 @@ p {
 }
 
 .p1 {
-    right: 5in;
+    right: 30%;
 }
 
 .p2 {
-    right: 4in;
+    right: 25%;
 }
 
 .p3 {
-    right: 3in;
+    right: 20%;
 }
 
 .white-line {
     border: 2px solid #ffffff; /* Set the color and thickness of the line */
-    width: 4in; /* Set the length of the line */
+    width: 25%; /* Set the length of the line */
     position: absolute;
     top: 55px; /* Set the vertical position of the line */
     left: 0; /* Set the horizontal position of the line */
