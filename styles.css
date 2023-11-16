@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'CustomFont', serif;
     color: #ffffff;
-    margin: 20px 0; /* Remove default margin */
+    margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
 
