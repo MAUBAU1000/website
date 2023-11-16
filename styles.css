@@ -9,10 +9,10 @@ body {
 }
 
 h1 {
-    font-family: 'D-DIN-Italic', sans-serif;
+    font-family: 'Times New Roman', Times, sans-serif;
     color: #ffffff;
     position: absolute;
-    top: 0;
+    top: 20x;
     left: 3in;
     margin: 0; /* Remove default margin */
 }
@@ -22,7 +22,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     position: absolute;
-    top: 0;
+    top: 20x;
     margin: 0; /* Remove default margin */
 }
 
