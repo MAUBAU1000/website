@@ -9,14 +9,14 @@ body {
     background-image: url('maubau_background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'CustomFont', sans-serif;
+    font-family: 'CustomFont', serif;
     color: #ffffff;
     margin: 20px 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
 
 h1 {
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family: 'CustomFont', serif;
     color: #ffffff;
     position: absolute;
     top: 20px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 p {
-    font-family: 'CustomFont', sans-serif;
+    font-family: 'CustomFont', serif;
     font-size: 16px;
     line-height: 1.5;
     position: absolute;
