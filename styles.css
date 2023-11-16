@@ -47,7 +47,7 @@ p {
 
 .white-line {
     border: 2px solid #ffffff; /* Set the color and thickness of the line */
-    width: 30%; /* Set the length of the line */
+    width: 25%; /* Set the length of the line */
     position: absolute;
     top: 55px; /* Set the vertical position of the line */
     left: 0; /* Set the horizontal position of the line */
