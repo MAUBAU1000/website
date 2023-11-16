@@ -1,10 +1,17 @@
+/* @font-face {
+    font-family: 'CustomFont';
+    src: url('YourCustomFont.otf') format('opentype'); /* Adjust the font file name and format */
+    font-weight: normal;
+    font-style: normal;
+} */
+
 body {
     background-image: url('maubau_background.png');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'D-DIN-Italic', sans-serif;
     color: #ffffff;
-    margin: 0; /* Remove default margin */
+    margin: 20px 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
 
@@ -12,7 +19,7 @@ h1 {
     font-family: 'Times New Roman', Times, sans-serif;
     color: #ffffff;
     position: absolute;
-    top: 20x;
+    top: 20px;
     left: 3in;
     margin: 0; /* Remove default margin */
 }
@@ -22,7 +29,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     position: absolute;
-    top: 20x;
+    top: 20px;
     margin: 0; /* Remove default margin */
 }
 
