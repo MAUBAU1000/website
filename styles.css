@@ -1,0 +1,39 @@
+body {
+    background-image: url('maubau_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'D-DIN-Italic', sans-serif;
+    color: #ffffff;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+h1 {
+    font-family: 'D-DIN-Italic', sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 3in;
+    margin: 0; /* Remove default margin */
+}
+
+p {
+    font-family: 'D-DIN-Italic', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    position: absolute;
+    top: 0;
+    margin: 0; /* Remove default margin */
+}
+
+.p1 {
+    right: 5in;
+}
+
+.p2 {
+    right: 4in;
+}
+
+.p3 {
+    right: 3in;
+}
