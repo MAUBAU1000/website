@@ -44,3 +44,11 @@ p {
 .p3 {
     right: 3in;
 }
+
+.white-line {
+    border: 1px solid #ffffff; /* Set the color and thickness of the line */
+    width: 50%; /* Set the length of the line */
+    position: absolute;
+    top: 50px; /* Set the vertical position of the line */
+    left: 25%; /* Set the horizontal position of the line */
+}
