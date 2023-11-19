@@ -50,18 +50,18 @@ o {
     font-size: 32px;
 /*     line-height: 1.5; */
     position: absolute;
-    top: 20px;
+    top: 50px;
     margin: 0;
     left: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*     height: 100%; */
+/*     display: flex; */
+/*     align-items: center; */
+/*     justify-content: center; */
 }
 
 .wrapped-text {
     white-space: pre-line;
-    text-align: center;
+/*     text-align: center; */
 }
 
 .white-line {
