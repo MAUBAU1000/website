@@ -71,3 +71,13 @@ o {
     top: 55px; /* Set the vertical position of the line */
     left: 0; /* Set the horizontal position of the line */
 }
+
+@media only screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+
+            header, footer {
+                font-size: 16px;
+            }
+        }
