@@ -21,7 +21,7 @@ h1 {
     position: absolute;
     top: 20px;
     left: 20%;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 p {
@@ -30,7 +30,7 @@ p {
     line-height: 1.5;
     position: absolute;
     top: 20px;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 .p1 {
@@ -43,6 +43,25 @@ p {
 
 .p3 {
     right: 20%;
+}
+
+o {
+    font-family: 'CustomFont', serif;
+    font-size: 32px;
+/*     line-height: 1.5; */
+    position: absolute;
+    top: 20px;
+    margin: 0;
+    left: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapped-text {
+    white-space: pre-line;
+    text-align: center;
 }
 
 .white-line {
