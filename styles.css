@@ -49,9 +49,9 @@ o {
     font-family: 'CustomFont', serif;
     font-size: 32px;
     margin: 0;
-    display: flex;
+/*     display: flex; */
     align-items: center;
-    justify-content: center;
+/*     justify-content: center; */
     height: 100vh;
     
     /*     line-height: 1.5; */
