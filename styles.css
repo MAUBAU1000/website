@@ -49,10 +49,10 @@ o {
     font-family: 'CustomFont', serif;
     font-size: 32px;
     margin: 0;
-    display: flex;
+/*     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .white-line {
