@@ -6,17 +6,17 @@
 }
 
 body {
-    img {
+/*     img { */
         background-image: url('maubau_background.png');
         background-size: cover;
         background-repeat: no-repeat;
         max-width: 100%;
         height: auto;
-    }
+/*     }
     font-family: 'CustomFont', serif;
     color: #ffffff;
     margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    padding: 0; /* Remove default padding */ */
 }
 
 h1 {
