@@ -48,9 +48,10 @@ p {
 o {
     font-family: 'CustomFont', serif;
     font-size: 32px;
-    margin: 0;
+    position: absolute;
     top: 50%;
     left: 20%;
+    margin: 0;
 /*     display: flex;
     height: 100%;
     align-items: center;
