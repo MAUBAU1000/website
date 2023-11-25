@@ -67,7 +67,7 @@ o {
                 font-size: 14px;
             }
 
-            header, footer {
+            header, footer, o {
                 font-size: 16px;
             }
         }
