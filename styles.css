@@ -52,10 +52,6 @@ o {
     top: 50%;
     left: 20%;
     margin: 0;
-/*     display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center; */
 }
 
 .white-line {
@@ -65,12 +61,6 @@ o {
     top: 55px; /* Set the vertical position of the line */
     left: 0; /* Set the horizontal position of the line */
 }
-
-/* .centered-text {
-            max-width: 60%; /* Set your desired maximum width
-            margin-left: 20%; /* Start the text block at 20% from the left
-            text-align: left; /* Align the text to the left within the block
-        } */
 
 @media only screen and (max-width: 600px) {
             body {
