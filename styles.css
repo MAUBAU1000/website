@@ -60,30 +60,31 @@ o {
 }
 
 @media only screen and (max-width: 700px) {
-            body {
-                font-size: 14px;
-                position: absolute;
-                margin: 0;
-                left: 20%;
+    position: absolute;
+    margin: 0;
+            
+    body {
+        font-size: 14px;
+        left: 20%;
 /*                 padding: 1em; */
-                .p1 {
-                    top: 70px;
-                }
-                .p2 {
-                    top: 90px;
-                }
-                .p3 {
-                    top: 110px;
-                }
-                o {
-                top: 50%;
-                }
-            }
-
-            header, footer {
-                font-size: 16px;
-                postion: absolute;
-                margin: 0;
-                left: 20%;
-            }
+        .p1 {
+            top: 75px;
         }
+        .p2 {
+            top: 100px;
+        }
+        .p3 {
+            top: 125px;
+        }
+        o {
+            top: 50%;
+        }
+    }
+
+    header, footer {
+        font-size: 16px;
+        postion: absolute;
+        margin: 0;
+        left: 20%;
+    }
+}
