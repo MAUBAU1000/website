@@ -111,32 +111,7 @@ o {
         border: 2px solid #ffffff;
         width: 28%;
         position: absolute;
-        top: 55px;
+        top: 50%;
         left: 0;
     }
-            
-/*     body {
-        font-size: 14px;
-        left: 20%;
-                padding: 1em;
-        .p1 {
-            top: 75px;
-        }
-        .p2 {
-            top: 100px;
-        }
-        .p3 {
-            top: 125px;
-        }
-        o {
-            top: 50%;
-        }
-    }
-
-    header, footer {
-        font-size: 16px;
-        postion: absolute;
-        margin: 0;
-        left: 20%;
-    } */
 }
