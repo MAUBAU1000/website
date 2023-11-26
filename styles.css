@@ -13,23 +13,22 @@ body {
     height: auto;
     font-family: 'CustomFont', serif;
     color: #ffffff;
+    position: absolute;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
 
 h1 {
-    position: absolute;
+/*     position: absolute; */
     top: 20px;
     left: 20%;
-    margin: 0;
 }
 
 p {
     font-size: 16px;
-    position: absolute;
+/*     position: absolute; */
     line-height: 1.5;
     top: 20px;
-    margin: 0;
 }
 
 .p1 {
@@ -46,10 +45,9 @@ p {
 
 o {
     font-size: 32px;
-    position: absolute;
+/*     position: absolute; */
     top: 50%;
     left: 20%;
-    margin: 0;
 }
 
 .white-line {
