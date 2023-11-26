@@ -10,7 +10,7 @@ body {
     background-size: cover; /* covers the whole page with the background */
     background-repeat: repeat; /*  */
     max-width: 100%;
-    height: auto;
+    height: auto; 
     font-family: 'CustomFont', serif;
     color: #ffffff;
     margin: 0;
@@ -54,7 +54,7 @@ o {
 
 .white-line {
     border: 2px solid #ffffff;
-    width: 27%;
+    width: 28%;
     position: absolute;
     top: 55px;
     left: 0;
@@ -63,6 +63,16 @@ o {
 @media only screen and (max-width: 600px) {
             body {
                 font-size: 14px;
+                position: absolute;
+                .p1 {
+                    top: 70px;
+                }
+                .p2 {
+                    top: 90px;
+                }
+                .p3 {
+                    top: 110px;
+                }
             }
 
             header, footer, o {
