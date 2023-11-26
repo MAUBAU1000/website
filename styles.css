@@ -17,19 +17,20 @@ body {
     padding: 0;
 }
 
-h1 {
+h1, p, o {
     position: absolute;
-    top: 20px;
-    left: 20%;
     margin: 0;
 }
 
+h1 {
+    top: 20px;
+    left: 20%;
+}
+
 p {
-    position: absolute;
     font-size: 16px;
     line-height: 1.5;
     top: 20px;
-    margin: 0;
 }
 
 .p1 {
@@ -45,11 +46,9 @@ p {
 }
 
 o {
-    position: absolute;
     font-size: 32px;
     top: 50%;
     left: 20%;
-    margin: 0;
 }
 
 .white-line {
