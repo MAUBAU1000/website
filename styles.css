@@ -60,7 +60,7 @@ o {
 }
 
 @media only screen and (max-width: 700px) {
-            body, p {
+            body {
                 font-size: 14px;
                 position: absolute;
                 margin: 0;
@@ -75,15 +75,15 @@ o {
                 .p3 {
                     top: 110px;
                 }
+                o {
+                top: 50%;
+                }
             }
 
-            header, o {
+            header, footer {
                 font-size: 16px;
                 postion: absolute;
                 margin: 0;
                 left: 20%;
-            }
-            o {
-                top: 50%;
             }
         }
