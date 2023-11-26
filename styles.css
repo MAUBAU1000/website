@@ -59,7 +59,7 @@ o {
     left: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
             body, p {
                 font-size: 14px;
                 position: absolute;
