@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'CustomFont';
-    src: url('d-din/D-DIN-Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'CustomFont'; /* creating a custom font */
+    src: url('d-din/D-DIN-Italic.otf') format('opentype'); /* linking the external D-DIN font */
+    font-weight: normal; /* sets the boldness to normal */
+    font-style: normal; /* sets the font-style to normal */
 }
 
 body {
@@ -13,17 +13,18 @@ body {
     height: auto;
     font-family: 'CustomFont', serif;
     color: #ffffff;
-    position: absolute;
     margin: 0;
     padding: 0;
 }
 
 h1 {
+    position: absolute;
     top: 20px;
     left: 20%;
 }
 
 p {
+    position: absolute;
     font-size: 16px;
     line-height: 1.5;
     top: 20px;
@@ -42,6 +43,7 @@ p {
 }
 
 o {
+    position: absolute;
     font-size: 32px;
     top: 50%;
     left: 20%;
