@@ -6,9 +6,9 @@
 }
 
 body {
-    background-image: url('maubau_background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('maubau_background.png'); /* sets the background */
+    background-size: cover; /* covers the whole page with the background */
+    background-repeat: repeat;
     max-width: 100%;
     height: auto;
     font-family: 'CustomFont', serif;
