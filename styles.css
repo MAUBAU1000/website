@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url('d-din/D-DIN-Italic.otf') format('opentype'); /* Adjust the font file name and format */
+    src: url('d-din/D-DIN-Italic.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,19 +14,17 @@ body {
     font-family: 'CustomFont', serif;
     color: #ffffff;
     position: absolute;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-/*     position: absolute; */
     top: 20px;
     left: 20%;
 }
 
 p {
     font-size: 16px;
-/*     position: absolute; */
     line-height: 1.5;
     top: 20px;
 }
@@ -45,17 +43,16 @@ p {
 
 o {
     font-size: 32px;
-/*     position: absolute; */
     top: 50%;
     left: 20%;
 }
 
 .white-line {
-    border: 2px solid #ffffff; /* Set the color and thickness of the line */
-    width: 30%; /* Set the length of the line */
+    border: 2px solid #ffffff;
+    width: 27%;
     position: absolute;
-    top: 55px; /* Set the vertical position of the line */
-    left: 0; /* Set the horizontal position of the line */
+    top: 55px;
+    left: 0;
 }
 
 @media only screen and (max-width: 600px) {
