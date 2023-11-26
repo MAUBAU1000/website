@@ -8,7 +8,7 @@
 body {
     background-image: url('maubau_background.png'); /* sets the background */
     background-size: cover; /* covers the whole page with the background */
-    background-repeat: repeat;
+    background-repeat: repeat; /*  */
     max-width: 100%;
     height: auto;
     font-family: 'CustomFont', serif;
@@ -21,6 +21,7 @@ h1 {
     position: absolute;
     top: 20px;
     left: 20%;
+    margin: 0;
 }
 
 p {
@@ -28,6 +29,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     top: 20px;
+    margin: 0;
 }
 
 .p1 {
@@ -47,6 +49,7 @@ o {
     font-size: 32px;
     top: 50%;
     left: 20%;
+    margin: 0;
 }
 
 .white-line {
