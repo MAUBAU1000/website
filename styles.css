@@ -17,6 +17,10 @@ body {
     padding: 0;
 }
 
+a {
+    color: #ffffff;
+}
+
 h1, p, o {
     position: absolute;
     margin: 0;
