@@ -64,7 +64,8 @@ o {
             body, p {
                 font-size: 14px;
                 position: absolute;
-                left: 20%;
+/*                 left: 20%; */
+                padding: 1em;
                 .p1 {
                     top: 70px;
                 }
