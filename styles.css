@@ -109,9 +109,9 @@ o {
     
     .white-line {
         border: 2px solid #ffffff;
-        width: 28%;
+        width: 50%;
         position: absolute;
-        top: 50%;
+        top: 55px;
         left: 0;
     }
 }
