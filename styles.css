@@ -9,6 +9,8 @@ body {
     background-image: url('maubau_background.png'); /* sets the background */
     background-size: contain; /* covers the whole page with the background */
     resize: both;
+    width: 1024px;
+    height: 768px;
 /*     background-repeat: repeat; */
     max-width: 100%;
     height: auto; 
@@ -95,19 +97,19 @@ o {
     p {
         font-size: 14px;
         line-height: 1.5;
-        left: 20%
+        right: 10%
     }
     
     .p1 {
-        top: 75px;
+        top: 20px;
     }
     
     .p2 {
-        top: 100px;
+        top: 45px;
     }
     
     .p3 {
-        top: 125px;
+        top: 70px;
     }
     
     o {
