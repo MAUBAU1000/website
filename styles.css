@@ -8,6 +8,7 @@
 body {
     background-image: url('maubau_background.png'); /* sets the background */
     background-size: contain; /* covers the whole page with the background */
+    resize: both;
 /*     background-repeat: repeat; */
     max-width: 100%;
     height: auto; 
