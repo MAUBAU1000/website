@@ -88,7 +88,7 @@ o {
     h1 {
 /*         font-size: 16px; */
         top: 20px;
-        left: 20%;
+        left: 10%;
     }
     
     p {
@@ -112,12 +112,12 @@ o {
     o {
         font-size: 20px;
         top: 50%;
-        left: 20%;
+        left: 10%;
     }
     
     .white-line {
         border: 2px solid #ffffff;
-        width: 55%;
+        width: 45%;
         position: absolute;
         top: 55px;
         left: 0;
