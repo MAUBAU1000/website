@@ -67,9 +67,9 @@ o {
     left: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 720px) {
     body {
-        background-image: url('maubau_background.png'); /* sets the background */
+        background-image: url('maubau_background_index_mobile.png'); /* sets the background */
         background-size: cover; /* covers the whole page with the background */
         background-repeat: repeat; /*  */
         max-width: 100%;
