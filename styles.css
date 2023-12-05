@@ -80,7 +80,7 @@ o {
         padding: 0;
     }
 
-    h1, p, o {
+    h1, o {
         position: absolute;
         margin: 0;
     }
@@ -95,6 +95,8 @@ o {
         font-size: 14px;
         line-height: 1.5;
         right: 10%;
+        left: auto;
+        margin: 0;
     }
     
     .p1 {
