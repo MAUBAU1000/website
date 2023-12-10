@@ -3,7 +3,7 @@
     src: url('d-din/D-DIN-Italic.otf') format('opentype'); /* linking the external D-DIN font */
     font-weight: normal; /* sets the boldness to normal */
     font-style: normal; /* sets the font-style to normal */
-}
+
 
 body {
     background-image: url('maubau_background.png'); /* sets the background */
@@ -65,6 +65,7 @@ o {
     position: absolute;
     top: 55px;
     left: 0;
+}
 }
 
 @media only screen and (max-width: 720px) {
