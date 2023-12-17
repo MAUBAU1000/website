@@ -92,7 +92,7 @@ o {
 
 @media only screen and (max-width: 720px) {
     body {
-        background-image: url('../backgrounds/maubau_background_index_mobile.png'); /* sets the background */
+        background-image: url('../backgrounds/maubau_background_products_mobile.png'); /* sets the background */
         background-size: cover; /* covers the whole page with the background */
         background-repeat: repeat; /*  */
         max-width: 100%;
@@ -139,6 +139,22 @@ o {
         font-size: 20px;
         top: 50%;
         left: 10%;
+    }
+
+    .image {
+        width: 170.66px;
+        height: 128px;
+        position: absolute;
+        margin: 10px; /* Adjust the spacing between images */
+        border: 2px solid #ccc3c3;
+    }
+
+    .image1 {
+        top: 50%;
+        left: 43%;
+        margin-top: -64px; /* Half of the image height */
+        margin-left: -85.33px; /* Half of the image width */
+        /* margin-right: auto; */
     }
     
     .white-line {
