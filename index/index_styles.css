@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'CustomFont'; /* creating a custom font */
-    src: url('d-din/D-DIN-Italic.otf') format('opentype'); /* linking the external D-DIN font */
+    src: url('../d-din/D-DIN-Italic.otf') format('opentype'); /* linking the external D-DIN font */
     font-weight: normal; /* sets the boldness to normal */
     font-style: normal; /* sets the font-style to normal */
 }
 
 body {
-    background-image: url('backgrounds/maubau_background_products.png'); /* sets the background */
+    background-image: url('../backgrounds/maubau_background.png'); /* sets the background */
     background-size: cover; /* covers the whole page with the background */
     background-repeat: repeat;
     max-width: 100%;
@@ -69,7 +69,7 @@ o {
 
 @media only screen and (max-width: 720px) {
     body {
-        background-image: url('maubau_background_index_mobile.png'); /* sets the background */
+        background-image: url('../backgrounds/maubau_background_index_mobile.png'); /* sets the background */
         background-size: cover; /* covers the whole page with the background */
         background-repeat: repeat; /*  */
         max-width: 100%;
@@ -80,7 +80,7 @@ o {
         padding: 0;
     }
 
-    h1, p, o {
+    h1, o {
         position: absolute;
         margin: 0;
     }
@@ -95,6 +95,8 @@ o {
         font-size: 14px;
         line-height: 1.5;
         right: 10%;
+        left: auto;
+        margin: 0;
     }
     
     .p1 {
