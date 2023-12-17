@@ -94,21 +94,22 @@ o {
     p {
         font-size: 14px;
         line-height: 1.5;
-        right: 10%;
-        left: auto;
         margin: 0;
     }
     
     .p1 {
         top: 20px;
+        right: 10%;
     }
     
     .p2 {
         top: 45px;
+        right: 10%;
     }
     
     .p3 {
         top: 70px;
+        right: 10%;
     }
     
     o {
