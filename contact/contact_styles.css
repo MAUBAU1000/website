@@ -143,9 +143,7 @@ o {
 
     .image {
         width: 256px;
-        /* 170.66px; */
         height: 192px;
-        /* 128px; */
         position: absolute;
         margin: 10px; /* Adjust the spacing between images */
         border: 2px solid #ccc3c3;
@@ -154,7 +152,7 @@ o {
     .image1 {
         top: 50%;
         left: 43%;
-        margin-top: -30px; /* Half of the image height */
+        margin-top: -120px; /* Half of the image height */
         margin-left: -120px; /* Half of the image width */
         /* margin-right: auto; */
     }
