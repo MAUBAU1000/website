@@ -142,9 +142,9 @@ o {
     }
 
     .image {
-        width: 341px;
+        width: 256px;
         /* 170.66px; */
-        height: 256px;
+        height: 192px;
         /* 128px; */
         position: absolute;
         margin: 10px; /* Adjust the spacing between images */
@@ -155,7 +155,7 @@ o {
         top: 50%;
         left: 43%;
         margin-top: -30px; /* Half of the image height */
-        margin-left: -140px; /* Half of the image width */
+        margin-left: -120px; /* Half of the image width */
         /* margin-right: auto; */
     }
     
