@@ -1,16 +1,12 @@
 @font-face {
-    font-family: 'CustomFont'; /* creating a custom font */
-    src: url('../d-din/D-DIN-Italic.otf') format('opentype'); /* linking the external D-DIN font */
-    font-weight: normal; /* sets the boldness to normal */
-    font-style: normal; /* sets the font-style to normal */
+    font-family: 'CustomFont';
+    src: url('../d-din/D-DIN-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    background-image: url('../images/backgrounds/maubau_background.png'); /* sets the background */
-    background-size: cover; /* covers the whole page with the background */
-    background-repeat: repeat;
-    max-width: 100%;
-    height: auto; 
+    background-image: url('../images/backgrounds/maubau_background.png');
     font-family: 'CustomFont', serif;
     color: #ffffff;
     margin: 0;
@@ -25,53 +21,34 @@ a:hover {
     color: #3c1680;    
 }
 
-h1, p, o {
+h1, p {
+    font-size: 32px;
     position: absolute;
     margin: 0;
 }
 
 h1 {
-    top: 20px;
-    left: 20%;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    top: 20px;
+    font-size: 32px;
 }
 
 .p1 {
-    right: 35%;
+    font-size: 16px;
+    top: 20px;
 }
 
 .p2 {
-    right: 28%;
-}
-
-.p3 {
-    right: 20%;
-}
-
-o {
     font-size: 32px;
-    top: 50%;
-    left: 20%;
 }
 
 .white-line {
     border: 2px solid #ffffff;
-    width: 28%;
-    position: absolute;
-    top: 55px;
-    left: 0;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 992px) {
     body {
-        background-image: url('../images/backgrounds/maubau_background_index_mobile.png'); /* sets the background */
-        background-size: cover; /* covers the whole page with the background */
-        background-repeat: repeat; /*  */
+        background-image: url('../images/backgrounds/maubau_background_index_mobile.png');
+        background-size: cover;
+        background-repeat: repeat;
         max-width: 100%;
         height: auto; 
         font-family: 'CustomFont', serif;
@@ -80,13 +57,14 @@ o {
         padding: 0;
     }
 
+    /*
+
     h1, o {
         position: absolute;
         margin: 0;
     }
     
     h1 {
-/*         font-size: 16px; */
         top: 20px;
         left: 10%;
     }
@@ -111,13 +89,15 @@ o {
         top: 70px;
         right: 10%;
     }
+    */
     
-    o {
+    .p2 {
         font-size: 20px;
-        top: 50%;
-        left: 10%;
+        /* top: 50%; */
+        /* left: 10%; */
     }
-    
+}
+    /*
     .white-line {
         border: 2px solid #ffffff;
         width: 45%;
@@ -125,4 +105,4 @@ o {
         top: 55px;
         left: 0;
     }
-}
+} */
