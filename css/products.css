@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('https://n048953b.tinifycdn.com/../images/backgrounds/maubau_background_products.png'); /* sets the background */
+    background-image: url('../images/backgrounds/maubau_background_products.png'); /* sets the background */
     background-size: cover; /* covers the whole page with the background */
     background-repeat: repeat;
     max-width: 100%;
@@ -108,7 +108,7 @@ o {
 
 @media only screen and (max-width: 720px) {
     body {
-        background-image: url('https://n048953b.tinifycdn.com/../images/backgrounds/maubau_background_products_mobile.png'); /* sets the background */
+        background-image: url('../images/backgrounds/maubau_background_products_mobile.png'); /* sets the background */
         background-size: cover; /* covers the whole page with the background */
         background-repeat: repeat; /*  */
         max-width: 100%;
