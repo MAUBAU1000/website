@@ -23,12 +23,13 @@ a:hover {
     color: #3c1680;    
 }
 
-h1, p, o {
+h1, p {
     position: absolute;
     margin: 0;
 }
 
 h1 {
+    font-size: 35px;
     top: 20px;
     left: 20%;
 }
@@ -47,18 +48,14 @@ p {
     right: 5%;
 }
 
-/* .p3 {
-    right: 20%;
-} */
-
-o {
+.p3 {
     font-size: 32px;
     top: 42%;
     left: 20%;
 }
 
 .white-line {
-    border: 2.2px solid #ffffff;
+    border: 2px solid #ffffff;
     width: 29%;
     position: absolute;
     top: 57px;
@@ -103,21 +100,16 @@ o {
         top: 45px;
         right: 10%;
     }
-/*     
+
     .p3 {
-        top: 70px;
-        right: 10%;
-    }
-     */
-    o {
         font-size: 20px;
-        top: 50%;
+        top: 40%;
         left: 10%;
     }
     
     .white-line {
         border: 2px solid #ffffff;
-        width: 41%;
+        width: 44%;
         position: absolute;
         top: 55px;
         left: 0;
