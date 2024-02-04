@@ -144,6 +144,7 @@ p {
     }
 
     .p3  {
+        position: fixed;
         top: 95%;
         left: 38%;
     }
