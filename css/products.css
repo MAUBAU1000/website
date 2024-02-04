@@ -1,120 +1,106 @@
 @font-face {
-    font-family: 'CustomFont'; /* creating a custom font */
-    src: url('../d-din/D-DIN-Italic.otf') format('opentype'); /* linking the external D-DIN font */
-    font-weight: normal; /* sets the boldness to normal */
-    font-style: normal; /* sets the font-style to normal */
+    font-family: 'CustomFontItalic';
+    src: url('../d-din/D-DIN-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFontBold';
+    src: url('../d-din/D-DINCondensed-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    background-image: url('../images/backgrounds/maubau_background_products.png'); /* sets the background */
-    background-size: cover; /* covers the whole page with the background */
-    background-repeat: repeat;
+    background-image: url('../images/backgrounds/BG\ light\ grey\ BIG\ R01.png');
     max-width: 100%;
     height: auto; 
-    font-family: 'CustomFont', serif;
-    color: #ffffff;
+    font-family: 'CustomFontItalic', serif;
+    color: #000;
     margin: 0;
     padding: 0;
 }
 
+
 a {
-    color: #ffffff;
+    color: #000;
 }
 
 a:hover {
-    color: #3c1680;    
+    color: #d4af37;    
 }
 
-h1, p, o {
+h1, p {
     position: absolute;
     margin: 0;
 }
 
 h1 {
+    font-size: 35px;
     top: 20px;
     left: 20%;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     top: 20px;
 }
 
 .p1 {
-    right: 35%;
+    right: 12%;
 }
 
 .p2 {
-    right: 28%;
+    right: 5%;
 }
 
 .p3 {
-    right: 20%;
+    top: 96%;
+    right: 50%;
 }
 
-o {
-    font-size: 32px;
-    top: 50%;
-    left: 20%;
+.p4 {
+    font-size: 18px;
+    font-family: 'CustomFontBold', serif;
 }
 
-.image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.p5 {
+    font-size: 14px;
 }
 
-.image {
-    width: 409.6px;
-    height: 307.2px;
-    position: absolute;
-    margin: 10px; /* Adjust the spacing between images */
-    border: 4px solid #ccc3c3;
+.row {
+    min-height: 10rem;
 }
 
-/* Position the images horizontally at 25%, 50%, and 75% */
-.image1 {
-    top: 50%;
-    left: 19%;
-    margin-top: -153.6px; /* Half of the image height */
-    margin-left: -204.8px; /* Half of the image width */
-    /* margin-right: auto; */
+.card {
+    border: 4px solid #000;
+    border-radius: 0%;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-.image2 {
-    top: 50%;
-    left: 50%;
-    margin-top: -153.6px; /* Half of the image height */
-    margin-left: -204.8px; /* Half of the image width */
-    /* margin: 0 auto; */
-}
-
-.image3 {
-    top: 50%;
-    left: 81%;
-    margin-top: -153.6px; /* Half of the image height */
-    margin-left: -204.8px; /* Half of the image width */
-    /* margin-left: auto; */
+.card-img-top {
+    border-radius: 0%;
 }
 
 .white-line {
-    border: 2px solid #ffffff;
-    width: 28%;
+    border: 2px solid #000;
+    width: 29%;
     position: absolute;
-    top: 55px;
+    top: 57px;
     left: 0;
 }
 
 @media only screen and (max-width: 720px) {
     body {
-        background-image: url('../images/backgrounds/maubau_background_products_mobile.png'); /* sets the background */
-        background-size: cover; /* covers the whole page with the background */
-        background-repeat: repeat; /*  */
+        background-image: url('../images/backgrounds/BG\ light\ grey\ R01.png'); /* sets the background */
+        background-size: cover;
+        background-repeat: repeat;
         max-width: 100%;
         height: auto; 
-        font-family: 'CustomFont', serif;
-        color: #ffffff;
+        font-family: 'CustomFontItalic', serif;
+        color: #000;
         margin: 0;
         padding: 0;
     }
@@ -125,7 +111,6 @@ o {
     }
     
     h1 {
-/*         font-size: 16px; */
         top: 20px;
         left: 10%;
     }
@@ -145,58 +130,32 @@ o {
         top: 45px;
         right: 10%;
     }
-    
-    .p3 {
-        top: 70px;
-        right: 10%;
-    }
-    
-    o {
-        font-size: 20px;
-        top: 50%;
-        left: 10%;
+
+    .p3  {
+        display: none;
     }
 
-    /*  product titels in D-DINCondensed-Bold.otf
-        textblokken in D-Din.otf
-        495 * 351
-    */
-    .image {
-        width: 136.53px;
-        height: 102.4px;
-        position: absolute;
-        margin: 10px; /* Adjust the spacing between images */
-        border: 4px solid #ccc3c3;
+    .row {
+        display: flex;
+        align-items: center;
+        height: 430px;
     }
     
-    /* Position the images horizontally at 25%, 50%, and 75% */
-    .image1 {
-        top: 25%;
-        left: 50%;
-        margin-top: -51.2px; /* Half of the image height */
-        margin-left: -68.26px; /* Half of the image width */
-        /* margin-right: auto; */
+    .col-xs-12 {
+        width: 100%;
+        max-width: 270px;
     }
-    
-    .image2 {
-        top: 50%;
-        left: 50%;
-        margin-top: -51.2px; /* Half of the image height */
-        margin-left: -68.26px; /* Half of the image width */
-        /* margin: 0 auto; */
-    }
-    
-    .image3 {
-        top: 75%;
-        left: 50%;
-        margin-top: -51.2px; /* Half of the image height */
-        margin-left: -68.26px; /* Half of the image width */
-        /* margin-left: auto; */
+
+    .card {
+        border: 4px solid #000;
+        border-radius: 0%;
+        background-color: rgba(255, 255, 255, 0);
+        margin: 20px;
     }
     
     .white-line {
-        border: 2px solid #ffffff;
-        width: 45%;
+        border: 2px solid #000;
+        width: 44%;
         position: absolute;
         top: 55px;
         left: 0;
