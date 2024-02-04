@@ -131,8 +131,12 @@ p {
         right: 10%;
     }
 
-    .p3  {
+    .p3 {
         display: none;
+    }
+
+    .p5 {
+        font-size: 12px;
     }
 
     .row {
@@ -142,8 +146,8 @@ p {
     }
     
     .col-xs-12 {
-        width: 100%;
-        max-width: 270px;
+        /* width: 100%; */
+        /* max-width: 270px; */
     }
 
     .card {
@@ -151,6 +155,7 @@ p {
         border-radius: 0%;
         background-color: rgba(255, 255, 255, 0);
         margin: 20px;
+
     }
     
     .white-line {
