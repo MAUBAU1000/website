@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'CustomFontBold';
+    src: url('../d-din/D-DINCondensed-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-image: url('../images/backgrounds/BG\ light\ grey\ BIG\ R01.png');
     max-width: 100%;
@@ -53,16 +60,13 @@ p {
     right: 50%;
 }
 
-o {
-    font-size: 32px;
-    top: 50%;
-    left: 20%;
+.p4 {
+    font-size: 18px;
+    font-family: 'CustomFontBold', serif;
 }
 
-.image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.p5 {
+    font-size: 14px;
 }
 
 .image {
@@ -71,6 +75,25 @@ o {
     position: absolute;
     margin: 10px;
     border: 5px solid #000;
+}
+
+.row {
+    min-height: 10rem;
+}
+
+.card1 {
+    border: 4px solid #000;
+    border-radius: 0%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.card2 {
+    border-radius: 0%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.card-img-top {
+    border-radius: 0%;
 }
 
 .white-line {
