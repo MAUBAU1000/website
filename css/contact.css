@@ -143,6 +143,11 @@ p {
         right: 10%;
     }
 
+    .p3  {
+        top: 95%;
+        left: 38%;
+    }
+
     .row {
         display: flex;
         align-items: center;
