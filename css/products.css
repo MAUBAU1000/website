@@ -40,7 +40,7 @@ h1 {
     font-size: 35px;
     top: 20px;
     /* left: 20%; */
-    left: 230px;
+    left: 200px;
 }
 
 p {
@@ -90,7 +90,7 @@ p {
 .white-line {
     border: 2px solid #000;
     /* width: 29%; */
-    width: 360px;
+    width: 330px;
     position: absolute;
     top: 57px;
     left: 0;
