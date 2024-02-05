@@ -31,7 +31,8 @@ h1, p {
 h1 {
     font-size: 35px;
     top: 20px;
-    left: 20%;
+    /* left: 20%; */
+    left: 230px;
 }
 
 p {
@@ -41,22 +42,26 @@ p {
 }
 
 .p1 {
-    right: 12%;
+    /* right: 12%; */
+    right: 173px;
 }
 
 .p2 {
-    right: 5%;
+    /* right: 5%; */
+    right: 72px;
 }
 
 .p3 {
     font-size: 32px;
     top: 42%;
-    left: 20%;
+    /* left: 20%; */
+    left: 230px;
 }
 
 .white-line {
     border: 2px solid #fff;
-    width: 29%;
+    /* width: 29%; */
+    width: 360px;
     position: absolute;
     top: 57px;
     left: 0;

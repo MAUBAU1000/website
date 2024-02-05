@@ -38,7 +38,8 @@ h1, p, o {
 h1 {
     font-size: 35px;
     top: 20px;
-    left: 20%;
+    /* left: 20%; */
+    left: 230px;
 }
 
 p {
@@ -48,11 +49,13 @@ p {
 }
 
 .p1 {
-    right: 12%;
+    /* right: 12%; */
+    right: 173px;
 }
 
 .p2 {
-    right: 5%;
+    /* right: 5%; */
+    right: 72px;
 }
 
 .p3 {
@@ -98,7 +101,8 @@ p {
 
 .white-line {
     border: 2px solid #000;
-    width: 29%;
+    /* width: 29%; */
+    width: 360px;
     position: absolute;
     top: 57px;
     left: 0;
