@@ -126,12 +126,13 @@ p {
     }
     
     .p1 {
-        top: 20px;
+        top: 25px;
         right: 10%;
+
     }
     
     .p2 {
-        top: 45px;
+        top: 55px;
         right: 10%;
     }
 
@@ -146,12 +147,7 @@ p {
     .row {
         display: flex;
         align-items: center;
-        height: 430px;
-    }
-    
-    .col-xs-12 {
-        /* width: 100%; */
-        /* max-width: 270px; */
+        height: 470px;
     }
 
     .card {
