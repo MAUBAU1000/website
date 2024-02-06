@@ -55,7 +55,7 @@ p {
     font-size: 32px;
     top: 42%;
     /* left: 20%; */
-    left: 230px;
+    left: 200px;
 }
 
 .white-line {
@@ -97,12 +97,13 @@ p {
     }
     
     .p1 {
-        top: 20px;
+        top: 25px;
         right: 10%;
+
     }
     
     .p2 {
-        top: 45px;
+        top: 55px;
         right: 10%;
     }
 
