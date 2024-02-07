@@ -99,6 +99,11 @@ p {
     border-radius: 0%;
 }
 
+.emoji img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+}
+
 .white-line {
     border: 2px solid #000;
     /* width: 29%; */
@@ -149,9 +154,16 @@ p {
     }
 
     .p3  {
+        display: flex;
         position: fixed;
         top: 95%;
         left: 38%;
+    }
+
+    .emoji img {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
     }
 
     .row {
