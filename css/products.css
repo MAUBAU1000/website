@@ -87,6 +87,11 @@ p {
     border-radius: 0%;
 }
 
+.emoji img {
+    width: 20px;
+    height: 20px;
+}
+
 .white-line {
     border: 2px solid #000;
     /* width: 29%; */
