@@ -7,8 +7,10 @@
 
 body {
     background-image: url('../images/homepage/LANDING\ PAGE\ R01.png');
+    background-size: cover;
+    background-attachment: fixed;
     max-width: 100%;
-    height: auto; 
+    height: auto;
     font-family: 'CustomFont', serif;
     color: #ffffff;
     margin: 0;
