@@ -49,13 +49,52 @@
             display: none;
         }
 
-        /* Adjust card styling */
-        .card {
+        .card-hidden {
+            opacity: 0.5;
+        }
+
+        .card-column {
             position: relative;
+        }
+
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            opacity: 0;
             transition: opacity 0.3s ease;
         }
 
-        .card-hidden {
+        .prev-btn {
+            left: 10px;
+        }
+
+        .next-btn {
+            right: 10px;
+        }
+
+        .card:hover .nav-btn {
+            opacity: 1;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Ensure other cards retain their layout */
+        .card {
+            position: relative;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .hidden .card {
+            transform: scale(0.95);
             opacity: 0.5;
         }
     </style>
