@@ -11,93 +11,6 @@
         crossorigin="anonymous"
     >
     <link rel="stylesheet" href="../css/products.css">
-    <style>
-        /* Styling for the info button */
-        .info-btn {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            border: none;
-            padding: 5px;
-            font-size: 12px;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            border-radius: 50%;
-        }
-
-        .card:hover .info-btn {
-            opacity: 1;
-        }
-
-        /* Styling for the information container */
-        .info-container {
-            display: none;
-            position: absolute;
-            background-color: #f8f9fa;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            width: 100%;
-            max-width: 300px;
-            z-index: 20;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .card-hidden {
-            opacity: 0.5;
-        }
-
-        .card-column {
-            position: relative;
-        }
-
-        .nav-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 10;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .prev-btn {
-            left: 10px;
-        }
-
-        .next-btn {
-            right: 10px;
-        }
-
-        .card:hover .nav-btn {
-            opacity: 1;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        /* Ensure other cards retain their layout */
-        .card {
-            position: relative;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        .hidden .card {
-            transform: scale(0.95);
-            opacity: 0.5;
-        }
-    </style>
 </head>
 <body>
     <a href="index.html"><h1>MAUBAU</h1></a>
@@ -112,7 +25,7 @@
                     <div class="card square-card">
                         <button class="nav-btn prev-btn" onclick="prevImage(0)">&#10094;</button>
                         <button class="nav-btn next-btn" onclick="nextImage(0)">&#10095;</button>
-                        <button class="info-btn" onclick="toggleInfo(0)">i</button>
+                        <button class="info-btn" onclick="toggleInfo(0)">Info</button>
                         <div class="card-body">
                             <div class="p4">neon fixture</div>
                             <div class="p5">design engineering / prototyping / production</div>
@@ -126,7 +39,7 @@
                     <div class="card square-card">
                         <button class="nav-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
                         <button class="nav-btn next-btn" onclick="nextImage(1)">&#10095;</button>
-                        <button class="info-btn" onclick="toggleInfo(1)">i</button>
+                        <button class="info-btn" onclick="toggleInfo(1)">Info</button>
                         <div class="card-body">
                             <div class="p4">cart design</div>
                             <div class="p5">low volume design / engineering / assembly</div>
@@ -140,7 +53,7 @@
                     <div class="card square-card">
                         <button class="nav-btn prev-btn" onclick="prevImage(2)">&#10094;</button>
                         <button class="nav-btn next-btn" onclick="nextImage(2)">&#10095;</button>
-                        <button class="info-btn" onclick="toggleInfo(2)">i</button>
+                        <button class="info-btn" onclick="toggleInfo(2)">Info</button>
                         <div class="card-body">
                             <div class="p4">furniture system</div>
                             <div class="p5">design / prototyping / production</div>
@@ -153,7 +66,7 @@
             <!-- Info Container -->
             <div id="info-container" class="info-container">
                 <div id="info-text"></div>
-                <button onclick="closeInfo()">Close</button>
+                <button class="close-container" onclick="closeInfo()">Close</button>
             </div>
         </div>
     </div>
@@ -163,8 +76,10 @@
         const images = [
             [
                 "../images/products/NEF in bomen.png",
-                "../images/products/NEF_image2.png",
-                "../images/products/NEF_image3.png"
+                "../images/products/neon_fixture_1.jpg",
+                "../images/products/neon_fixture_2.jpg",
+                "../images/products/neon_fixture_3.jpg",
+                "../images/products/neon_fixture_4.jpg"
             ],
             [
                 "../images/products/CART.png",
