@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../d-din/D-DIN.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-image: url('../images/backgrounds/BG\ light\ grey\ BIG\ R01.png');
     background-size: cover;
@@ -148,6 +155,7 @@ p {
 
 .nav-btn {
     position: absolute;
+    font-family: 'CustomFont', serif;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -158,6 +166,7 @@ p {
     z-index: 10;
     opacity: 0;
     transition: opacity 0.3s ease;
+    border-radius: 50%;
 }
 
 .prev-btn {
@@ -188,15 +197,16 @@ p {
 }
 
 .close-container {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'CustomFont', serif;
     position: absolute;
     background-color: #f8f9fa;
     border: 1px solid #ddd;
-    border-radius: 50px;
-    padding: 10px;
-    width: 20%;
-    top: 80%;
-    right: 10%;
+    border-radius: 20px;
+    padding: 2px;
+    width: 8%;
+    top: 86%;
+    right: 6%;
 }
 
 @media only screen and (max-width: 720px) {
@@ -268,4 +278,10 @@ p {
         top: 55px;
         left: 0;
     }
+    
+    .info-btn {
+        display: none;
+    }
+
+
 }
