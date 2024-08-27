@@ -196,15 +196,23 @@ p {
     opacity: 0.5;
 }
 
+.info-card {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-align: center;
+}
+
 .close-container {
     font-size: 16px;
     font-family: 'CustomFont', serif;
     position: absolute;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    padding: 2px;
-    width: 8%;
     top: 86%;
     right: 6%;
 }
@@ -282,6 +290,4 @@ p {
     .info-btn {
         display: none;
     }
-
-
 }

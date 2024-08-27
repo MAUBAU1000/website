@@ -61,12 +61,14 @@
                         <img src="../images/products/MODULAR FURNITURE SYSTEM.png" class="card-img-top" alt="Card image">
                     </div>
                 </div>
-            </div>
-            
-            <!-- Info Container -->
-            <div id="info-container" class="info-container">
-                <div id="info-text"></div>
-                <button class="close-container" onclick="closeInfo()">x</button>
+
+                <!-- Placeholder for Info Card -->
+                <div class="col-xs-12 col-sm-4 card-column" id="info-card" style="display: none;">
+                    <div class="card square-card info-card">
+                        <div id="info-text"></div>
+                        <button class="close-container" onclick="closeInfo()">close</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -111,51 +113,56 @@
             "This is some extra information about the furniture system project."
         ];
 
+        let lastHiddenCardIndex = null;
+
         function toggleInfo(cardIndex) {
-            const infoContainer = document.getElementById('info-container');
+            const infoCard = document.getElementById('info-card');
             const infoText = document.getElementById('info-text');
             const cardColumns = document.querySelectorAll('.card-column');
+            let replaceCardIndex, hideCardIndex;
 
-            // Hide all cards and remove their active class
-            cardColumns.forEach((column, index) => {
-                if (index !== cardIndex) {
-                    column.querySelector('.card').classList.add('card-hidden');
-                }
-            });
-
-            // Set the info text and display the container
-            infoText.textContent = infoData[cardIndex];
-            infoContainer.style.display = 'block';
-
-            // Position the info container based on the cardIndex
-            const cardColumn = document.getElementById(`card-${cardIndex}`);
-            const cardRect = cardColumn.getBoundingClientRect();
-
-            infoContainer.style.width = `${cardColumn.offsetWidth}px`;
-            infoContainer.style.height = `${cardColumn.offsetHeight}px`;
-
+            // Set the adjacent card to replace and the other card to hide
             if (cardIndex === 0) {
-                infoContainer.style.left = `${cardRect.right + window.scrollX + 10}px`;
-                infoContainer.style.top = `${cardRect.top + window.scrollY}px`;
+                replaceCardIndex = 1;
+                hideCardIndex = 2;
             } else if (cardIndex === 1) {
-                infoContainer.style.left = `${cardRect.right + window.scrollX + 10}px`;
-                infoContainer.style.top = `${cardRect.top + window.scrollY}px`;
-            } else if (cardIndex === 2) {
-                infoContainer.style.left = `${cardRect.left - infoContainer.offsetWidth - 10}px`;
-                infoContainer.style.top = `${cardRect.top + window.scrollY}px`;
+                replaceCardIndex = 2;
+                hideCardIndex = 0;
+            } else {
+                replaceCardIndex = 1;
+                hideCardIndex = 0;
             }
+
+            // Set the info text
+            infoText.textContent = infoData[cardIndex];
+
+            // Hide the adjacent card and show the info card
+            cardColumns[replaceCardIndex].style.display = 'none';
+            infoCard.style.display = 'block';
+
+            // Hide the other card
+            cardColumns[hideCardIndex].style.display = 'none';
+
+            // Ensure the info card resizes like the other cards
+            infoCard.className = cardColumns[replaceCardIndex].className;
+            infoCard.querySelector('.card').className = cardColumns[replaceCardIndex].querySelector('.card').className + " info-card";
+
+            lastHiddenCardIndex = hideCardIndex;
         }
 
         function closeInfo() {
             const cardColumns = document.querySelectorAll('.card-column');
-            const infoContainer = document.getElementById('info-container');
+            const infoCard = document.getElementById('info-card');
 
             // Show all cards again
-            cardColumns.forEach(column => column.querySelector('.card').classList.remove('card-hidden'));
+            cardColumns.forEach(column => {
+                column.style.display = 'block';
+            });
 
-            // Hide the info container
-            infoContainer.style.display = 'none';
+            // Hide the info card
+            infoCard.style.display = 'none';
         }
+
     </script>
 </body>
 </html>
