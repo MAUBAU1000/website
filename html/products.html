@@ -108,7 +108,7 @@
         }
 
         const infoData = [
-            "This is some extra information about the neon fixture project.",
+            "This is some extra information about the neon fixture project.<br><br>Hallo!",
             "This is some extra information about the cart design project.",
             "This is some extra information about the furniture system project."
         ];
@@ -134,7 +134,7 @@
             }
 
             // Set the info text
-            infoText.textContent = infoData[cardIndex];
+            infoText.innerHTML = infoData[cardIndex];
 
             // Hide the adjacent card and show the info card
             cardColumns[replaceCardIndex].style.display = 'none';
