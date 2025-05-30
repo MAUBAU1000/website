@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAUBAU</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/installations.css" />
+  </head>
+  <body>
+    <a href="index.html"><h1>MAUBAU</h1></a>
+    <a href="interior.html"><p class="p7">interior</p></a>
+    <a href="installations.html"><p class="p6">installations</p></a>
+    <a href="about.html"><p class="p2">about</p></a>
+    <a href="contact.html"><p class="p1">contact</p></a>
+    <hr class="white-line" />
+    <div class="bootstrap-wrapper vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-xs-12 col-sm-4 card-column" id="card-0">
+            <div class="card square-card">
+              <button class="nav-btn prev-btn" onclick="prevImage(0)">
+                &#10094;
+              </button>
+              <button class="nav-btn next-btn" onclick="nextImage(0)">
+                &#10095;
+              </button>
+              <button class="info-btn" onclick="toggleInfo(0)">Info</button>
+              <div class="card-body">
+                <div class="p4">neon fixture</div>
+                <div class="p5">material study / prototyping / fabrication</div>
+              </div>
+              <img
+                src="../images/products/Card 1/NEF 1.png"
+                class="card-img-top"
+                alt="Card image"
+              />
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-xs-12 col-sm-4 card-column" id="card-1">
+            <div class="card square-card">
+              <button class="nav-btn prev-btn" onclick="prevImage(1)">
+                &#10094;
+              </button>
+              <button class="nav-btn next-btn" onclick="nextImage(1)">
+                &#10095;
+              </button>
+              <button class="info-btn" onclick="toggleInfo(1)">Info</button>
+              <div class="card-body">
+                <div class="p4">specialized cart</div>
+                <div class="p5">low volume design / engineering / assembly</div>
+              </div>
+              <img
+                src="../images/products/Card 2/CART 1.png"
+                class="card-img-top"
+                alt="Card image"
+              />
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-xs-12 col-sm-4 card-column" id="card-2">
+            <div class="card square-card">
+              <button class="nav-btn prev-btn" onclick="prevImage(2)">
+                &#10094;
+              </button>
+              <button class="nav-btn next-btn" onclick="nextImage(2)">
+                &#10095;
+              </button>
+              <button class="info-btn" onclick="toggleInfo(2)">Info</button>
+              <div class="card-body">
+                <div class="p4">terrarium</div>
+                <div class="p5">
+                  design engineering / production / on-site assembly
+                </div>
+              </div>
+              <img
+                src="../images/products/Card 3/LEK24 1.png"
+                class="card-img-top"
+                alt="Card image"
+              />
+            </div>
+          </div>
+
+          <!-- Placeholder for Info Card -->
+          <div
+            class="col-xs-12 col-sm-4 card-column"
+            id="info-card"
+            style="display: none"
+          >
+            <div class="card square-card info-card">
+              <div id="info-text"></div>
+              <button class="close-container" onclick="closeInfo()">
+                close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.instagram.com/maubaugauw/"
+      ><p class="p3">@maubaugauw</p></a
+    >
+
+    <script>
+      const images = [
+        [
+          "../images/products/Card 1/NEF 1.png",
+          "../images/products/Card 1/NEF 2.png",
+          "../images/products/Card 1/NEF 3.png",
+          "../images/products/Card 1/NEF 4.png",
+          "../images/products/Card 1/NEF 5.png",
+        ],
+        [
+          "../images/products/Card 2/CART 1.png",
+          "../images/products/Card 2/CART 2.png",
+          "../images/products/Card 2/CART 3.png",
+        ],
+        [
+          "../images/products/Card 3/LEK24 1.png",
+          "../images/products/Card 3/LEK24 2.png",
+          "../images/products/Card 3/LEK24 3.png",
+          "../images/products/Card 3/LEK24 4.png",
+          "../images/products/Card 3/LEK24 5.png",
+        ],
+      ];
+
+      const currentIndex = [0, 0, 0];
+
+      function nextImage(cardIndex) {
+        currentIndex[cardIndex] =
+          (currentIndex[cardIndex] + 1) % images[cardIndex].length;
+        document.querySelectorAll(".card-img-top")[cardIndex].src =
+          images[cardIndex][currentIndex[cardIndex]];
+      }
+
+      function prevImage(cardIndex) {
+        currentIndex[cardIndex] =
+          (currentIndex[cardIndex] - 1 + images[cardIndex].length) %
+          images[cardIndex].length;
+        document.querySelectorAll(".card-img-top")[cardIndex].src =
+          images[cardIndex][currentIndex[cardIndex]];
+      }
+
+      const infoData = [
+        "This fixture is designed to hold a 2 metre long neon tube. With the use of a fine stainless steel mesh, hand formed, the effect is created of a metal tube that does not show any internal features when off but illuminates completely when on.<br><br>This product is designed in collaboration with Studio Raito. With their concept MAUBAU materialised, designed, engineered and fabricated these fixtures. ",
+        "This cart is specifically designed to pick up and place special sound proof panels of a modular studio also designed by MAUBAU for Herry.<br><br>The cart is designed to be easily assembled with rivets and rivet nuts. A sliding mechanism allows the user to easily pick up the 80+ Kg panels and move them freely. Designed with mass production techniques and assembled in-house. ",
+        "These terrariums are designed in collaboration with Studio Raito. The units are designed and built to be placed in museum or festival settings. They are modular and easy to (dis)assemble. Inside there is a space for plants that together with the polycarbonate and the LEDs give a cool visual effect.<br><br>The cart is designed to be easily assembled with rivets and rivet nuts. A sliding mechanism allows the user to easily pick up the 80+ Kg panels and move them freely. Designed with mass production techniques and assembled in-house.",
+      ];
+
+      let lastHiddenCardIndex = null;
+
+      function toggleInfo(cardIndex) {
+        const infoCard = document.getElementById("info-card");
+        const infoText = document.getElementById("info-text");
+        const cardColumns = document.querySelectorAll(".card-column");
+        let replaceCardIndex, hideCardIndex;
+
+        // Set the adjacent card to replace and the other card to hide
+        if (cardIndex === 0) {
+          replaceCardIndex = 1;
+          hideCardIndex = 2;
+        } else if (cardIndex === 1) {
+          replaceCardIndex = 2;
+          hideCardIndex = 0;
+        } else {
+          replaceCardIndex = 1;
+          hideCardIndex = 0;
+        }
+
+        // Set the info text
+        infoText.innerHTML = infoData[cardIndex];
+
+        // Hide the adjacent card and show the info card
+        cardColumns[replaceCardIndex].style.display = "none";
+        infoCard.style.display = "block";
+
+        // Hide the other card
+        cardColumns[hideCardIndex].style.display = "none";
+
+        // Ensure the info card resizes like the other cards
+        infoCard.className = cardColumns[replaceCardIndex].className;
+        infoCard.querySelector(".card").className =
+          cardColumns[replaceCardIndex].querySelector(".card").className +
+          " info-card";
+
+        lastHiddenCardIndex = hideCardIndex;
+      }
+
+      function closeInfo() {
+        const cardColumns = document.querySelectorAll(".card-column");
+        const infoCard = document.getElementById("info-card");
+
+        // Show all cards again
+        cardColumns.forEach((column) => {
+          column.style.display = "block";
+        });
+
+        // Hide the info card
+        infoCard.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
