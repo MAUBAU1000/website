@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAUBAU</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/interior.css" />
+  </head>
+  <body>
+    <a href="index.html"><h1>MAUBAU</h1></a>
+    <a href="interior.html"><p class="p7">interior</p></a>
+    <a href="installations.html"><p class="p6">installations</p></a>
+    <a href="about.html"><p class="p2">about</p></a>
+    <a href="contact.html"><p class="p1">contact</p></a>
+    <hr class="white-line" />
+    <div class="bootstrap-wrapper vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-xs-12 col-sm-4 card-column" id="card-0">
+            <div class="card square-card">
+              <button class="nav-btn prev-btn" onclick="prevImage(0)">
+                &#10094;
+              </button>
+              <button class="nav-btn next-btn" onclick="nextImage(0)">
+                &#10095;
+              </button>
+              <button class="info-btn" onclick="toggleInfo(0)">Info</button>
+              <div class="card-body">
+                <div class="p4">kitchen bar</div>
+                <div class="p5">design / material tests / production</div>
+              </div>
+              <img
+                src="../images/interior/Card 1/LET01.png"
+                class="card-img-top"
+                alt="Card image"
+              />
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-xs-12 col-sm-4 card-column" id="card-1">
+            <div class="card square-card">
+              <button class="nav-btn prev-btn" onclick="prevImage(1)">
+                &#10094;
+              </button>
+              <button class="nav-btn next-btn" onclick="nextImage(1)">
+                &#10095;
+              </button>
+              <button class="info-btn" onclick="toggleInfo(1)">Info</button>
+              <div class="card-body">
+                <div class="p4">plywood kitchen</div>
+                <div class="p5">design / client customization / production</div>
+              </div>
+              <img
+                src="../images/interior/Card 2/ROJ01.png"
+                class="card-img-top"
+                alt="Card image"
+              />
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-xs-12 col-sm-4 card-column" id="card-2">
+            <div class="card square-card">
+              <button class="nav-btn prev-btn" onclick="prevImage(2)">
+                &#10094;
+              </button>
+              <button class="nav-btn next-btn" onclick="nextImage(2)">
+                &#10095;
+              </button>
+              <button class="info-btn" onclick="toggleInfo(2)">Info</button>
+              <div class="card-body">
+                <div class="p4">stainless steel kitchen island</div>
+                <div class="p5">
+                  design / engineering / production
+                </div>
+              </div>
+              <img
+                src="../images/interior/Card 3/SAR01.png"
+                class="card-img-top"
+                alt="Card image"
+              />
+            </div>
+          </div>
+
+          <!-- Placeholder for Info Card -->
+          <div
+            class="col-xs-12 col-sm-4 card-column"
+            id="info-card"
+            style="display: none"
+          >
+            <div class="card square-card info-card">
+              <div id="info-text"></div>
+              <button class="close-container" onclick="closeInfo()">
+                close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.instagram.com/maubaugauw/"
+      ><p class="p3">@maubaugauw</p></a
+    >
+
+    <script>
+      const images = [
+        [
+          "../images/interior/Card 1/LET01.png",
+          "../images/interior/Card 1/LET02.png",
+          "../images/interior/Card 1/LET03.png",
+          "../images/interior/Card 1/LET04.png",
+          "../images/interior/Card 1/LET05.png",
+          "../images/interior/Card 1/LET06.png",
+        ],
+        [
+          "../images/interior/Card 2/ROJ01.png",
+          "../images/interior/Card 2/ROJ02.png",
+          "../images/interior/Card 2/ROJ03.png",
+          "../images/interior/Card 2/ROJ04.png",
+          "../images/interior/Card 2/ROJ05.png",
+        ],
+        [
+          "../images/interior/Card 3/SAR01.png",
+          "../images/interior/Card 3/SAR02.png",
+          "../images/interior/Card 3/SAR03.png",
+          "../images/interior/Card 3/SAR04.png",
+          "../images/interior/Card 3/SAR05.png",
+        ],
+      ];
+
+      const currentIndex = [0, 0, 0];
+
+      function nextImage(cardIndex) {
+        currentIndex[cardIndex] =
+          (currentIndex[cardIndex] + 1) % images[cardIndex].length;
+        document.querySelectorAll(".card-img-top")[cardIndex].src =
+          images[cardIndex][currentIndex[cardIndex]];
+      }
+
+      function prevImage(cardIndex) {
+        currentIndex[cardIndex] =
+          (currentIndex[cardIndex] - 1 + images[cardIndex].length) %
+          images[cardIndex].length;
+        document.querySelectorAll(".card-img-top")[cardIndex].src =
+          images[cardIndex][currentIndex[cardIndex]];
+      }
+
+      const infoData = [
+        "Made with powdercoated steel, birch plywood and stainless steel.<br><br>Less colosal because it is lifted from the ground by the steel frame.",
+        "Full birch plywood kitchen with powdercoated steel elements.<br><br>In collaboration with the client it is personalised so the green color matches the other pieces in house. ",
+        "Kitchen island fully covered with radial brushed stainless steel.<br><br>The interior of the island matches the wall kitchen by wood type and color.",
+      ];
+
+      let lastHiddenCardIndex = null;
+
+      function toggleInfo(cardIndex) {
+        const infoCard = document.getElementById("info-card");
+        const infoText = document.getElementById("info-text");
+        const cardColumns = document.querySelectorAll(".card-column");
+        let replaceCardIndex, hideCardIndex;
+
+        // Set the adjacent card to replace and the other card to hide
+        if (cardIndex === 0) {
+          replaceCardIndex = 1;
+          hideCardIndex = 2;
+        } else if (cardIndex === 1) {
+          replaceCardIndex = 2;
+          hideCardIndex = 0;
+        } else {
+          replaceCardIndex = 1;
+          hideCardIndex = 0;
+        }
+
+        // Set the info text
+        infoText.innerHTML = infoData[cardIndex];
+
+        // Hide the adjacent card and show the info card
+        cardColumns[replaceCardIndex].style.display = "none";
+        infoCard.style.display = "block";
+
+        // Hide the other card
+        cardColumns[hideCardIndex].style.display = "none";
+
+        // Ensure the info card resizes like the other cards
+        infoCard.className = cardColumns[replaceCardIndex].className;
+        infoCard.querySelector(".card").className =
+          cardColumns[replaceCardIndex].querySelector(".card").className +
+          " info-card";
+
+        lastHiddenCardIndex = hideCardIndex;
+      }
+
+      function closeInfo() {
+        const cardColumns = document.querySelectorAll(".card-column");
+        const infoCard = document.getElementById("info-card");
+
+        // Show all cards again
+        cardColumns.forEach((column) => {
+          column.style.display = "block";
+        });
+
+        // Hide the info card
+        infoCard.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
