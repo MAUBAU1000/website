@@ -121,7 +121,7 @@ p {
   left: 0;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 820px) {
   body {
     background-image: url("../images/backgrounds/BG\ light\ grey\ R01.png"); /* sets the background */
     background-size: cover;
