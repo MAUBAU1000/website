@@ -80,7 +80,7 @@ p {
   left: 0;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 820px) {
   body {
     background-image: url("../images/homepage/LANDING\ PAGE\ SMAL\ R01.png"); /* sets the background */
     background-size: cover;
