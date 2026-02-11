@@ -59,11 +59,6 @@ p {
   right: 173px;
 }
 
-.p3 {
-  top: 96%;
-  right: 50%;
-}
-
 .p4 {
   font-size: 18px;
   font-family: "CustomFontBold", serif;
@@ -83,6 +78,20 @@ p {
 
 .p8 {
   font-size: 16px;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 15px 0;
+  z-index: 1000;
 }
 
 .image {
@@ -175,7 +184,7 @@ p {
     right: 10%;
   }
 
-  .p3 {
+  .footer-center {
     display: none;
   }
 
